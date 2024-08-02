@@ -1,0 +1,49 @@
+.file-explorer {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.item {
+  margin-left: 20px;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.toggle {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.icon.folder::before {
+  content: "📁";
+}
+
+.icon.file::before {
+  content: "📄";
+}
+
+.name {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.children {
+  margin-left: 20px;
+}
+
+button {
+  margin-left: 5px;
+  cursor: pointer;
+}
